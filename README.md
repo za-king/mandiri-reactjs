@@ -4,7 +4,7 @@ M.Zaky Syukur
 
 
 ## COINT LIST
-![](cointdetail.png)
+![](cointllist.png)
 
 API = [api.coinpaprika](https://api.coinpaprika.com/v1/coins)
 ## DETAIL COINT
