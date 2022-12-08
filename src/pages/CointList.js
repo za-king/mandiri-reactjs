@@ -35,7 +35,7 @@ function CointList() {
       text: "ID",
       sort: true,
       headerStyle: () => {
-        return { backgroundColor: "#1aa3ff" };
+        return { backgroundColor: "#2952a3" };
       },
     },
     {
@@ -43,7 +43,7 @@ function CointList() {
       text: "Name",
       sort: true,
       headerStyle: () => {
-        return { backgroundColor: "#1aa3ff" };
+        return { backgroundColor: "#2952a3" };
       },
     },
     {
@@ -51,7 +51,7 @@ function CointList() {
       text: "Symbol",
       sort: true,
       headerStyle: () => {
-        return { backgroundColor: "#1aa3ff" };
+        return { backgroundColor: "#2952a3" };
       },
     },
     {
@@ -59,7 +59,7 @@ function CointList() {
       text: "Rank",
       sort: true,
       headerStyle: () => {
-        return { backgroundColor: "#1aa3ff" };
+        return { backgroundColor: "#2952a3" };
       },
     },
     {
@@ -67,7 +67,7 @@ function CointList() {
       text: "Type",
       sort: true,
       headerStyle: () => {
-        return { backgroundColor: "#1aa3ff" };
+        return { backgroundColor: "#2952a3" };
       },
     },
     {
@@ -75,7 +75,7 @@ function CointList() {
       text: "Active",
       sort: true,
       headerStyle: () => {
-        return { backgroundColor: "#1aa3ff" };
+        return { backgroundColor: "#2952a3" };
       },
     },
   ];
@@ -123,20 +123,20 @@ function CointList() {
                 </Col>
 
                 <Col>
-                  <Button color="primary">Search</Button>
+                  <Button style={{backgroundColor: "#2952a3" ,border: "none"}}>Search</Button>
                 </Col>
               </Row>
             </Form>
 
             <ToolkitProvider keyField="id" data={data} columns={columns}>
               {(props) => (
-                <div className="rounded">
+                <div className="rounded" >
                   <hr />
                   <BootstrapTable
                     {...props.baseProps}
                     pagination={paginationFactory()}
                     rowEvents={rowEvents}
-                    
+                    style={{ borderRadius: "25px !important"}}
                   />
                 </div>
               )}
